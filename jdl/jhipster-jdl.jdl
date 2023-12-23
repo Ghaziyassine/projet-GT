@@ -1,0 +1,74 @@
+// Définition des entités
+entity Client {
+  nomClient String
+  prenom String
+  email String
+  password String
+}
+
+entity Club {
+  nomClub String
+}
+
+entity Pack {
+  nomPack String
+  tarif String
+  nbrDeMatches Long
+}
+
+entity PackClient {
+  date Instant
+}
+
+entity Photo {
+  photo Blob
+}
+
+entity Reservation {
+  date Instant
+  etat String
+}
+
+entity ReservationTerrain {
+  heure Integer
+  date Instant
+}
+
+entity Terrain {
+  nomTerrain String
+  photo Blob
+  adresse String
+  latitude Float
+  longitude Float
+  rank Long
+  type String
+  etat String
+  description String
+  typeSal String
+  tarif String
+}
+
+entity Ville {
+  nomVille String
+}
+
+entity Zone {
+  nomZone String
+}
+
+// Définition des relations
+relationship OneToMany {
+  Client to PackClient{nomClient}
+  Client to Reservation{nomClient}
+  Club to Terrain{nomClub}
+  Pack to PackClient{nomPack}
+  Reservation to ReservationTerrain{reservation}
+  Terrain to Photo{nomTerrain}
+  Terrain to ReservationTerrain{nomTerrain}
+  Zone to Terrain{nomZone}
+  Ville to Zone{nomVille}
+}
+
+
+
+

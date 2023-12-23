@@ -1,0 +1,33 @@
+{
+  "annotations": {
+    "changelogDate": "20231223220409"
+  },
+  "applications": "*",
+  "entityTableName": "reservation_terrain",
+  "fields": [
+    {
+      "fieldName": "heure",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "date",
+      "fieldType": "Instant"
+    }
+  ],
+  "name": "ReservationTerrain",
+  "relationships": [
+    {
+      "otherEntityName": "reservation",
+      "relationshipName": "reservation",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "terrain",
+      "relationshipName": "nomTerrain",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

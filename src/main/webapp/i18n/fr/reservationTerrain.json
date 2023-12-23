@@ -1,0 +1,27 @@
+{
+  "appApp": {
+    "reservationTerrain": {
+      "home": {
+        "title": "ReservationTerrains",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Reservation Terrain",
+        "createOrEditLabel": "Créer ou éditer un Reservation Terrain",
+        "notFound": "Aucun Reservation Terrain trouvé"
+      },
+      "created": "Un nouveau Reservation Terrain a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Reservation Terrain avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Reservation Terrain avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Reservation Terrain {{ id }} ?"
+      },
+      "detail": {
+        "title": "Reservation Terrain"
+      },
+      "id": "ID",
+      "heure": "Heure",
+      "date": "Date",
+      "reservation": "Reservation",
+      "nomTerrain": "Nom Terrain"
+    }
+  }
+}

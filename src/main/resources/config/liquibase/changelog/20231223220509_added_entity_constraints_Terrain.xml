@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity Terrain.
+    -->
+    <changeSet id="20231223220509-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="nom_club_id"
+                                 baseTableName="terrain"
+                                 constraintName="fk_terrain__nom_club_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="club"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="nom_zone_id"
+                                 baseTableName="terrain"
+                                 constraintName="fk_terrain__nom_zone_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="zone"
+                                 />
+    </changeSet>
+</databaseChangeLog>

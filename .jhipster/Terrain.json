@@ -1,0 +1,84 @@
+{
+  "annotations": {
+    "changelogDate": "20231223220509"
+  },
+  "applications": "*",
+  "entityTableName": "terrain",
+  "fields": [
+    {
+      "fieldName": "nomTerrain",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "photo",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any"
+    },
+    {
+      "fieldName": "adresse",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "latitude",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "longitude",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "rank",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "etat",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "typeSal",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tarif",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Terrain",
+  "relationships": [
+    {
+      "otherEntityName": "photo",
+      "otherEntityRelationshipName": "nomTerrain",
+      "relationshipName": "photo",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "reservationTerrain",
+      "otherEntityRelationshipName": "nomTerrain",
+      "relationshipName": "reservationTerrain",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "club",
+      "relationshipName": "nomClub",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "zone",
+      "relationshipName": "nomZone",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

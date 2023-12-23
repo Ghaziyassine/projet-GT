@@ -1,0 +1,29 @@
+{
+  "annotations": {
+    "changelogDate": "20231223220109"
+  },
+  "applications": "*",
+  "entityTableName": "pack_client",
+  "fields": [
+    {
+      "fieldName": "date",
+      "fieldType": "Instant"
+    }
+  ],
+  "name": "PackClient",
+  "relationships": [
+    {
+      "otherEntityName": "client",
+      "relationshipName": "nomClient",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "pack",
+      "relationshipName": "nomPack",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

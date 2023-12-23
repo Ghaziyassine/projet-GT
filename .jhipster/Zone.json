@@ -1,0 +1,30 @@
+{
+  "annotations": {
+    "changelogDate": "20231223220709"
+  },
+  "applications": "*",
+  "entityTableName": "zone",
+  "fields": [
+    {
+      "fieldName": "nomZone",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Zone",
+  "relationships": [
+    {
+      "otherEntityName": "terrain",
+      "otherEntityRelationshipName": "nomZone",
+      "relationshipName": "terrain",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "ville",
+      "relationshipName": "nomVille",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

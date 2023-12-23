@@ -48,6 +48,25 @@ public class CacheConfiguration {
             createCache(cm, com.mycompany.myapp.domain.User.class.getName());
             createCache(cm, com.mycompany.myapp.domain.Authority.class.getName());
             createCache(cm, com.mycompany.myapp.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.mycompany.myapp.domain.Client.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Client.class.getName() + ".packClients");
+            createCache(cm, com.mycompany.myapp.domain.Client.class.getName() + ".reservations");
+            createCache(cm, com.mycompany.myapp.domain.Club.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Club.class.getName() + ".terrains");
+            createCache(cm, com.mycompany.myapp.domain.Pack.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Pack.class.getName() + ".packClients");
+            createCache(cm, com.mycompany.myapp.domain.PackClient.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Photo.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Reservation.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Reservation.class.getName() + ".reservationTerrains");
+            createCache(cm, com.mycompany.myapp.domain.ReservationTerrain.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Terrain.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Terrain.class.getName() + ".photos");
+            createCache(cm, com.mycompany.myapp.domain.Terrain.class.getName() + ".reservationTerrains");
+            createCache(cm, com.mycompany.myapp.domain.Ville.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Ville.class.getName() + ".zones");
+            createCache(cm, com.mycompany.myapp.domain.Zone.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Zone.class.getName() + ".terrains");
             // jhipster-needle-ehcache-add-entry
         };
     }

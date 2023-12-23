@@ -1,0 +1,24 @@
+{
+  "annotations": {
+    "changelogDate": "20231223220209"
+  },
+  "applications": "*",
+  "entityTableName": "photo",
+  "fields": [
+    {
+      "fieldName": "photo",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any"
+    }
+  ],
+  "name": "Photo",
+  "relationships": [
+    {
+      "otherEntityName": "terrain",
+      "relationshipName": "nomTerrain",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

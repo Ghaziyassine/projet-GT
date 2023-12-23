@@ -1,0 +1,32 @@
+{
+  "annotations": {
+    "changelogDate": "20231223220009"
+  },
+  "applications": "*",
+  "entityTableName": "pack",
+  "fields": [
+    {
+      "fieldName": "nomPack",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tarif",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nbrDeMatches",
+      "fieldType": "Long"
+    }
+  ],
+  "name": "Pack",
+  "relationships": [
+    {
+      "otherEntityName": "packClient",
+      "otherEntityRelationshipName": "nomPack",
+      "relationshipName": "packClient",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

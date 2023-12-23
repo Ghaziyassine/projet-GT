@@ -1,0 +1,26 @@
+{
+  "appApp": {
+    "packClient": {
+      "home": {
+        "title": "PackClients",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Pack Client",
+        "createOrEditLabel": "Créer ou éditer un Pack Client",
+        "notFound": "Aucun Pack Client trouvé"
+      },
+      "created": "Un nouveau Pack Client a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Pack Client avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Pack Client avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Pack Client {{ id }} ?"
+      },
+      "detail": {
+        "title": "Pack Client"
+      },
+      "id": "ID",
+      "date": "Date",
+      "nomClient": "Nom Client",
+      "nomPack": "Nom Pack"
+    }
+  }
+}
